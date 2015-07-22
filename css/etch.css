@@ -1,0 +1,13 @@
+.grid {
+
+    width: 25px;
+    height: 30px;
+    background-color: #EEE;
+    border : 1px dotted #ccc;
+    float: left;
+}
+
+.container {
+    width: 135px;
+}
+
