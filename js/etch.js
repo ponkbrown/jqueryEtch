@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var d= 16;
+    var d= 10;
     var ancho = d * 27;
     $('.container').css('width', ancho);
     tablero(d);
@@ -9,10 +9,16 @@ $(document).ready(function(){
 
 function limpiar(){
     $('.grid').css('background-color', "#FFF");
+    var d = prompt('Cuantos cuadritos?');
+    var ancho = d * 27;
+    $('.container').css('width', ancho);
+    tablero(d);
+    
 }
 
 function tablero(d){
 
+    $('.grid').remove();
     var grid = "<div class='grid'></div>"
     for (var rows = 0; rows < d; rows++){
         for(var cols = 0; cols < d; cols++){
